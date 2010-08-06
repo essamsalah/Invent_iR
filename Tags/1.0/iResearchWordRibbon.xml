@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon>
+    <tabs>
+      <tab id="tabHC" label="HC">
+        <group id="groupIResearch" label="iResearch">
+          <menu id="menuNewReport" supertip="Create New Research Report" label="New" size="large" image ="iRCreateNewReport" >
+            <button id="buttonReport1" label="Company Report" onAction ="RibbonCreateNewCompanyReport" />
+            <button id="buttonReport2" label="Economy Report"  onAction="RibbonCreateNewEconomyReport"/>
+            <button id="buttonReport3" label="Company Note" onAction="RibbonCreateNewCompanyNote" />
+            <button id="buttonReport4" label="Sector Note" onAction="RibbonCreateNewSectorNote" />
+            <button id="buttonReport5" label="TA Report" onAction="RibbonCreateNewTaReport" />
+
+          </menu>
+          <separator id="separator2" />
+          <menu id="menuInsert" supertip="Insert iResearch Page Elements" label="Insert" size="large" image="iRInsertPageElement">
+            <button id="buttonInsertParagraph" label="Paragraph" showImage="false" onAction="RibbonInserParagraph" />
+            <button id="buttonInsertTable" label="Table" showImage="false" onAction="RibbonInsertTable" />
+            <button id="buttonInsertPriceTable" label="Price Table" showImage="false" onAction="RibbonInserPriceTable" />
+            <button id="buttonInsertContactCard" label="Contact Card" showImage="false"  onAction="RibbonInserContactCard"/>
+            <button id="buttonInsertContactSheet" label="Contact Sheet" showImage="false" onAction="RibbonInserContactSheet" />
+            <menuSeparator id="menuSeparator3" />
+            <button id="buttonInsertPieChart" label="Pie Chart" showImage="false"  onAction="RibbonInsertPieChart"/>
+            <button id="buttonInsertDualPieChart" label="Dual Pie Chart" showImage="false" onAction="RibbonInsertDualPieChart" />
+            <button id="buttonInsertLineChart" label="Line Chart" showImage="false" onAction="RibbonInsertLineChart" />
+			<button id="buttonInsertLineAndPieChart" label="Line and Pie Chart" showImage="false" onAction="RibbonInsertLineAndPieChart" />
+			<menu id="menuInsertChart" supertip="Insert Embedded Chart (With Worksheet)" label="Insert Chart Worksheet" >
+			 <button id="buttonInsertPieChartSheet" label="Pie Chart" showImage="false"  onAction="RibbonInsertPieChartSheet"/>
+            <button id="buttonInsertDualPieChartSheet" label="Dual Pie Chart" showImage="false" onAction="RibbonInsertDualPieChartSheet" />
+            <button id="buttonInsertLinePieChartSheet" label="Line Chart" showImage="false" onAction="RibbonInsertLineChartSheet" />
+			
+			</menu>
+            <menuSeparator id="menuSeparator4" />
+            <button id="buttonInsertPlaceHolderSingleChart" label="Place Holder - 1 Chart" showImage="false"  onAction="RibbonInsertPlaceHolderSingleChart"/>
+            <button id="buttonInsertPlaceHolderDualChart"   label="Place Holder - 2 Charts" showImage="false" onAction="RibbonInsertPlaceHolderDualChart" />
+			<button id="buttonInsertPlaceHolderTable"   label="Place Holder - Table" showImage="false" onAction="RibbonInsertPlaceHolderTable" />
+
+          </menu>
+          <separator id="separator3" />
+          <menu id="menu2" label="Table Format" size="large" image="iRFormatTable">
+            <button id="buttonFormatSelectedTable" label="Whole Table" onAction="RibbonFormatSelectedTable"/>
+            <menuSeparator id="separator1" />
+            <button id="buttonFormatSelectedRow__HeaderRow" label="Header Row" onAction="RibbonFormatSelectedRowAsHeader"/>
+            <button id="buttonFormatSelectedRow__SectionRow" label="Section Row" onAction="RibbonFormatSelectedRowAsSectionHeader"/>
+            <button id="buttonFormatSelectedRow__NormalRow" label="Normal Row" onAction="RibbonFormatSelectedRowAsNormalRow"/>
+          </menu>
+          <!-- Excel Selection Commands-->
+          <separator id="separator4" />
+          <menu id="menu1" label="Excel Selection" size="large" image="iRExcelSelection">
+            <button id="buttonEmbeddExcelSelection" label="Embed here" onAction="RibbonEmbeddExcelSelection" />
+            <button id="buttonLinkExcelSelection" label="Link here" onAction="RibbonLinkExcelSelection"/>
+          </menu>
+
+          <dialogBoxLauncher>
+            <button id="group1__btn" screentip="About iResearch" onAction="iR_DialogBoxLauncher" />
+          </dialogBoxLauncher>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

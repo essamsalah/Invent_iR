@@ -1,0 +1,12 @@
+ Volume in drive D has no label.
+ Volume Serial Number is 80ED-CAB3
+
+ Directory of D:\Svn-Workspace\iResearch\src\Res\Fonts
+
+06/13/2009  07:57 PM    <DIR>          .
+06/13/2009  07:57 PM    <DIR>          ..
+06/13/2009  07:57 PM                 0 fonts.txt
+02/13/2004  10:51 PM            81,436 MyriadPro-Bold_1.otf
+02/13/2004  10:51 PM            79,364 MyriadPro-Regular_0.otf
+               3 File(s)        160,800 bytes
+               2 Dir(s)  11,374,919,680 bytes free
