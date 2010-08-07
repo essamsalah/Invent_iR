@@ -24,7 +24,7 @@
             <button id="buttonInsertDualPieChart" label="Dual Pie Chart" showImage="false" onAction="RibbonInsertDualPieChart" />
             <button id="buttonInsertLineChart" label="Line Chart" showImage="false" onAction="RibbonInsertLineChart" />
 			<button id="buttonInsertLineAndPieChart" label="Line and Pie Chart" showImage="false" onAction="RibbonInsertLineAndPieChart" />
-			<menu id="menuInsertChart" supertip="Insert Embedded Chart (With Worksheet)" label="Insert Chart Worksheet" >
+			<menu id="menuInsertChart" supertip="Insert Embedded Chart (With Worksheet)" label="Insert Chart Worksheet" visible ="false" >
 			 <button id="buttonInsertPieChartSheet" label="Pie Chart" showImage="false"  onAction="RibbonInsertPieChartSheet"/>
             <button id="buttonInsertDualPieChartSheet" label="Dual Pie Chart" showImage="false" onAction="RibbonInsertDualPieChartSheet" />
             <button id="buttonInsertLinePieChartSheet" label="Line Chart" showImage="false" onAction="RibbonInsertLineChartSheet" />
