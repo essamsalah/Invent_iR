@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <a:fontScheme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="iResearch">
   <a:majorFont>
-    <a:latin typeface="Tahoma"/>
-    <a:ea typeface=""/>
-    <a:cs typeface="Tahoma"/>
+    <a:latin typeface="Calibri" />
+    <a:ea typeface="Calibri" />
+    <a:cs typeface="Calibri" />
   </a:majorFont>
   <a:minorFont>
-    <a:latin typeface="Tahoma"/>
-    <a:ea typeface=""/>
-    <a:cs typeface="Tahoma"/>
+    <a:latin typeface="Calibri" />
+    <a:ea typeface="Calibri" />
+    <a:cs typeface="Calibri" />
   </a:minorFont>
 </a:fontScheme>
