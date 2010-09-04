@@ -5,11 +5,12 @@
       <tab id="tabHC" label="HC">
         <group id="groupIResearch" label="iResearch">
           <menu id="menuNewReport" supertip="Create New Research Report" label="New" size="large" image ="iRCreateNewReport" >
-            <button id="buttonReport1" label="Company Report" onAction ="RibbonCreateNewCompanyReport" />
-            <button id="buttonReport2" label="Economy Report"  onAction="RibbonCreateNewEconomyReport"/>
-            <button id="buttonReport3" label="Company Note" onAction="RibbonCreateNewCompanyNote" />
-            <button id="buttonReport4" label="Sector Note" onAction="RibbonCreateNewSectorNote" />
-            <button id="buttonReport5" label="TA Report" onAction="RibbonCreateNewTaReport" />
+            <button id="buttonReport1" label="Company Update"           onAction="Ribbon_CreateNew_Company_Update" />
+            <button id="buttonReport2" label="Initiation of Coverage"   onAction="Ribbon_CreateNew_Initiation_of_Coverage"/>
+            <button id="buttonReport3" label="Earnings Review"          onAction="Ribbon_CreateNew_Earnings_Review" />
+            <button id="buttonReport4" label="Sector Note"              onAction="Ribbon_CreateNew_Sector_Note" />
+            <button id="buttonReport5" label="Macro and Strategy Note"  onAction="Ribbon_CreateNew_Macro_and_Strategy_Note" />
+            <button id="buttonReport6" label="TA Report"                onAction="Ribbon_CreateNew_TA_Report" />
 
           </menu>
           <separator id="separator2" />
@@ -23,17 +24,17 @@
             <button id="buttonInsertPieChart" label="Pie Chart" showImage="false"  onAction="RibbonInsertPieChart"/>
             <button id="buttonInsertDualPieChart" label="Dual Pie Chart" showImage="false" onAction="RibbonInsertDualPieChart" />
             <button id="buttonInsertLineChart" label="Line Chart" showImage="false" onAction="RibbonInsertLineChart" />
-			<button id="buttonInsertLineAndPieChart" label="Line and Pie Chart" showImage="false" onAction="RibbonInsertLineAndPieChart" />
-			<menu id="menuInsertChart" supertip="Insert Embedded Chart (With Worksheet)" label="Insert Chart Worksheet" visible ="false" >
-			 <button id="buttonInsertPieChartSheet" label="Pie Chart" showImage="false"  onAction="RibbonInsertPieChartSheet"/>
-            <button id="buttonInsertDualPieChartSheet" label="Dual Pie Chart" showImage="false" onAction="RibbonInsertDualPieChartSheet" />
-            <button id="buttonInsertLinePieChartSheet" label="Line Chart" showImage="false" onAction="RibbonInsertLineChartSheet" />
-			
-			</menu>
+            <button id="buttonInsertLineAndPieChart" label="Line and Pie Chart" showImage="false" onAction="RibbonInsertLineAndPieChart" />
+            <menu id="menuInsertChart" supertip="Insert Embedded Chart (With Worksheet)" label="Insert Chart Worksheet" visible ="false" >
+              <button id="buttonInsertPieChartSheet" label="Pie Chart" showImage="false"  onAction="RibbonInsertPieChartSheet"/>
+              <button id="buttonInsertDualPieChartSheet" label="Dual Pie Chart" showImage="false" onAction="RibbonInsertDualPieChartSheet" />
+              <button id="buttonInsertLinePieChartSheet" label="Line Chart" showImage="false" onAction="RibbonInsertLineChartSheet" />
+
+            </menu>
             <menuSeparator id="menuSeparator4" />
             <button id="buttonInsertPlaceHolderSingleChart" label="Place Holder - 1 Chart" showImage="false"  onAction="RibbonInsertPlaceHolderSingleChart"/>
             <button id="buttonInsertPlaceHolderDualChart"   label="Place Holder - 2 Charts" showImage="false" onAction="RibbonInsertPlaceHolderDualChart" />
-			<button id="buttonInsertPlaceHolderTable"   label="Place Holder - Table" showImage="false" onAction="RibbonInsertPlaceHolderTable" />
+            <button id="buttonInsertPlaceHolderTable"   label="Place Holder - Table" showImage="false" onAction="RibbonInsertPlaceHolderTable" />
 
           </menu>
           <separator id="separator3" />
