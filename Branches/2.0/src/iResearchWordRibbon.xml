@@ -4,17 +4,17 @@
     <tabs>
       <tab id="tabHC" label="HC">
         <group id="groupIResearch" label="iResearch">
-          <menu id="menuNewReport" supertip="Create New Research Report" label="New" size="large" image ="iRCreateNewReport" >
-            <button id="buttonReport1" label="Company Report" onAction ="RibbonCreateNewCompanyReport" />
-            <button id="buttonReport2" label="Economy Report"  onAction="RibbonCreateNewEconomyReport"/>
-            <button id="buttonReport3" label="Company Note" onAction="RibbonCreateNewCompanyNote" />
-            <button id="buttonReport4" label="Sector Note" onAction="RibbonCreateNewSectorNote" />
-            <button id="buttonReport5" label="TA Report" onAction="RibbonCreateNewTaReport" />
-
+          <menu id="menuNewReport" supertip="Create New Research Report" label="New" size="large" image ="iRCreateNewReport" >            
+            <button id="buttonReport1" label="Company Note"             onAction="Ribbon_CreateNewReport" tag="Company Note" />
+            <button id="buttonReport2" label="Flashnote"                onAction="Ribbon_CreateNewReport" tag="Flashnote"/>
+            <button id="buttonReport3" label="Initiation of Coverage"   onAction="Ribbon_CreateNewReport" tag="Initiation of Coverage"/>
+            <button id="buttonReport4" label="Macro and Strategy"       onAction="Ribbon_CreateNewReport" tag="Macro and Strategy"/>
+            <button id="buttonReport5" label="Sector Note"              onAction="Ribbon_CreateNewReport" tag="Sector Note"/>
           </menu>
+          
           <separator id="separator2" />
           <menu id="menuInsert" supertip="Insert iResearch Page Elements" label="Insert" size="large" image="iRInsertPageElement">
-            <button id="buttonInsertParagraph" label="Paragraph" showImage="false" onAction="RibbonInserParagraph" />
+            <button id="buttonInsertParagraph" label="Text Section" showImage="false" onAction="RibbonInserParagraph" />
             <button id="buttonInsertTable" label="Table" showImage="false" onAction="RibbonInsertTable" />
             <button id="buttonInsertPriceTable" label="Price Table" showImage="false" onAction="RibbonInserPriceTable" />
             <button id="buttonInsertContactCard" label="Contact Card" showImage="false"  onAction="RibbonInserContactCard"/>
