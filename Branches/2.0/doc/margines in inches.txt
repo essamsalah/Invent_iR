@@ -1,0 +1,16 @@
+Margines:
+
+First Page
+
+L	.5
+R	.71
+T	.5
+B	.75
+
+
+Normal Pages
+
+L	.8
+R	1
+T	.5
+B	.75
