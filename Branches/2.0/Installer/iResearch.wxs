@@ -8,7 +8,7 @@
         <Property Id="OFFICE_INSTALL_ROOT">
             <RegistrySearch Id="regOfficeInstallRoot" Type="raw" Root="HKLM" Key="SOFTWARE\Microsoft\Office\12.0\Common\InstallRoot" Name="Path" />
         </Property>
-        <Icon Id="iResearch_Icon" SourceFile="..\src\Res\iResearch.ico" />
+        <Icon Id="iResearch_Icon" SourceFile="..\src\Res\iResearch_V2.ico" />
         <Property Id="ARPPRODUCTICON" Value="iResearch_Icon" />
         <Property Id="ARPCONTACT">essam@ieee.org</Property>
         <Property Id="ARPHELPTELEPHONE">010 606 07 89</Property>
@@ -62,6 +62,8 @@
                                 <File Id="Report_Initiation_of_Coverage.docx" Name="Report_Initiation of Coverage.docx" Source="..\src\Word\Blocks\Report_Initiation of Coverage.docx" />
                                 <File Id="Report_Macro_and_Strategy.docx" Name="Report_Macro and Strategy.docx" Source="..\src\Word\Blocks\Report_Macro and Strategy.docx" />
                                 <File Id="Report_Sector_Note.docx" Name="Report_Sector Note.docx" Source="..\src\Word\Blocks\Report_Sector Note.docx" />
+                                <File Id="iResearch__Dual_Bar_Chart_.docx" Name="iResearch_(Dual Bar Chart).docx" Source="..\src\Word\Blocks\iResearch_(Dual Bar Chart).docx" />
+                                <File Id="iResearch__Bar_Chart_.docx" Name="iResearch_(Bar Chart).docx" Source="..\src\Word\Blocks\iResearch_(Bar Chart).docx" />
                             </Component>
                         </Directory>
                     </Directory>
