@@ -8,7 +8,7 @@
             <button id="buttonReport1" label="Company Note"             onAction="Ribbon_CreateNewReport" tag="Company Note" />
             <button id="buttonReport2" label="Flashnote"                onAction="Ribbon_CreateNewReport" tag="Flashnote"/>
             <button id="buttonReport3" label="Initiation of Coverage"   onAction="Ribbon_CreateNewReport" tag="Initiation of Coverage"/>
-            <button id="buttonReport4" label="Macro and Strategy"       onAction="Ribbon_CreateNewReport" tag="Macro and Strategy"/>
+            <button id="buttonReport4" label="Macro and Strategy"       onAction="Ribbon_CreateNewReport" tag="Macro and Strategy Note"/>
             <button id="buttonReport5" label="Sector Note"              onAction="Ribbon_CreateNewReport" tag="Sector Note"/>
           </menu>
 
@@ -31,20 +31,21 @@
 
             <button id="buttonInsertDualPieChart" label="Dual Pie Chart" showImage="false" onAction="RibbonInsertDualPieChart" />
             <button id="buttonInsertDualBarChart" label="Dual Bar Chart" showImage="false" onAction="RibbonInsertDualBarChart" />
-            <button id="buttonInsertLineAndPieChart" label="Line and Pie Chart" showImage="false" onAction="RibbonInsertLineAndPieChart" />
+            <!--<button id="buttonInsertLineAndPieChart" label="Line and Pie Chart" showImage="false" onAction="RibbonInsertLineAndPieChart" />-->
 
-            <!--<menu id="menuInsertChart" supertip="Insert Embedded Chart (With Worksheet)" label="Insert Chart Worksheet" >
+            <!--
+            <menu id="menuInsertChart" supertip="Insert Embedded Chart (With Worksheet)" label="Insert Chart Worksheet" >
               <button id="buttonInsertPieChartSheet" label="Pie Chart" showImage="false"  onAction="RibbonInsertPieChartSheet"/>
               <button id="buttonInsertDualPieChartSheet" label="Dual Pie Chart" showImage="false" onAction="RibbonInsertDualPieChartSheet" />
               <button id="buttonInsertLinePieChartSheet" label="Line Chart" showImage="false" onAction="RibbonInsertLineChartSheet" />
 
-            </menu>-->
+            </menu>
             
             <menuSeparator id="menuSeparator4" />
             <button id="buttonInsertPlaceHolderSingleChart" label="Place Holder - 1 Chart" showImage="false"  onAction="RibbonInsertPlaceHolderSingleChart"/>
             <button id="buttonInsertPlaceHolderDualChart"   label="Place Holder - 2 Charts" showImage="false" onAction="RibbonInsertPlaceHolderDualChart" />
             <button id="buttonInsertPlaceHolderTable"   label="Place Holder - Table" showImage="false" onAction="RibbonInsertPlaceHolderTable" />
-
+            -->
           </menu>
           <separator id="separator3" />
           <menu id="menu2" label="Table Format" size="large" image="iRFormatTable">
