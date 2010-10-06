@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-    <Product Id="6E3C68B9-5D74-4C89-AC5C-8AFF266E81A7" Language="1033" Manufacturer="Invent" Name="iResearch Version 2.0 (Office 2007) Beta #1" Version="2.0.0" Codepage="1252">
+    <Product Id="6E3C68B9-5D74-4C89-AC5C-8AFF266E81A7" Language="1033" 
+             Manufacturer="Invent" 
+             Name="iResearch Version 2.0 (Office 2007) Beta #2" 
+             Version="2.0.0" Codepage="1252">
         <Package Id="*" Keywords="iResearch" Description="iResearch Installer" Comments="iResearch is a product of Invent Business Solutions." Manufacturer="Invent" InstallerVersion="200" Languages="1033" Compressed="yes" SummaryCodepage="1252" />
         <Media Id="1" Cabinet="iResearch.cab" EmbedCab="yes" DiskPrompt="CD-ROM #1" />
         <!-- Properties -->
@@ -60,10 +63,12 @@
                                 <File Id="Report_Company_Note.docx" Name="Report_Company Note.docx" Source="..\src\Word\Blocks\Report_Company Note.docx" />
                                 <File Id="Report_Flashnote.docx" Name="Report_Flashnote.docx" Source="..\src\Word\Blocks\Report_Flashnote.docx" />
                                 <File Id="Report_Initiation_of_Coverage.docx" Name="Report_Initiation of Coverage.docx" Source="..\src\Word\Blocks\Report_Initiation of Coverage.docx" />
-                                <File Id="Report_Macro_and_Strategy.docx" Name="Report_Macro and Strategy.docx" Source="..\src\Word\Blocks\Report_Macro and Strategy.docx" />
+                                <File Id="Report_Macro_and_Strategy.docx" Name="Report_Macro and Strategy Note.docx" Source="..\src\Word\Blocks\Report_Macro and Strategy Note.docx" />
                                 <File Id="Report_Sector_Note.docx" Name="Report_Sector Note.docx" Source="..\src\Word\Blocks\Report_Sector Note.docx" />
                                 <File Id="iResearch__Dual_Bar_Chart_.docx" Name="iResearch_(Dual Bar Chart).docx" Source="..\src\Word\Blocks\iResearch_(Dual Bar Chart).docx" />
                                 <File Id="iResearch__Bar_Chart_.docx" Name="iResearch_(Bar Chart).docx" Source="..\src\Word\Blocks\iResearch_(Bar Chart).docx" />
+                                <File Id="iResearch_Bullets.doc" Name="iResearch_Bullets.doc" Source="..\src\Word\Blocks\iResearch_Bullets.doc" />
+                                <File Id="iResearch_Subsection.doc" Name="iResearch_Subsection.doc" Source="..\src\Word\Blocks\iResearch_Subsection.doc" />
                             </Component>
                         </Directory>
                     </Directory>
