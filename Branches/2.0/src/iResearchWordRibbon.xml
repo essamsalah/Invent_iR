@@ -51,9 +51,10 @@
           <menu id="menu2" label="Table Format" size="large" image="iRFormatTable">
             <button id="buttonFormatSelectedTable" label="Whole Table" onAction="RibbonFormatSelectedTable"/>
             <menuSeparator id="separator1" />
-            <button id="buttonFormatSelectedRow__HeaderRow" label="Header Row" onAction="RibbonFormatSelectedRowAsHeader"/>
-            <button id="buttonFormatSelectedRow__SectionRow" label="Section Row" onAction="RibbonFormatSelectedRowAsSectionHeader"/>
-            <button id="buttonFormatSelectedRow__NormalRow" label="Normal Row" onAction="RibbonFormatSelectedRowAsNormalRow"/>
+            <button id="buttonFormatSelectedRow__TableTitle" label="Table Title" onAction="Ribbon_FormatSelectedRowAs_TableTitle"/>
+            <button id="buttonFormatSelectedRow__TableHeader" label="Table Header" onAction="Ribbon_FormatSelectedRowAs_TableHeader"/>
+            <button id="buttonFormatSelectedRow__TableRow" label="Table Row" onAction="Ribbon_FormatSelectedRowAs_TableRow"/>
+            <button id="buttonFormatSelectedRow__TableFooter" label="Table Footer" onAction="Ribbon_FormatSelectedRowAs_TableFooter"/>
           </menu>
           <!-- Excel Selection Commands-->
           <separator id="separator4" />
