@@ -2,7 +2,7 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Product Id="6E3C68B9-5D74-4C89-AC5C-8AFF266E81A7" Language="1033" 
              Manufacturer="Invent" 
-             Name="iResearch Version 2.0 (Office 2007) Beta #2" 
+             Name="iResearch Version 2.0 (Office 2007) Final Preview" 
              Version="2.0.0" Codepage="1252">
         <Package Id="*" Keywords="iResearch" Description="iResearch Installer" Comments="iResearch is a product of Invent Business Solutions." Manufacturer="Invent" InstallerVersion="200" Languages="1033" Compressed="yes" SummaryCodepage="1252" />
         <Media Id="1" Cabinet="iResearch.cab" EmbedCab="yes" DiskPrompt="CD-ROM #1" />
