@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="6E3C68B9-5D74-4C89-AC5C-8AFF266E81A7" Language="1033" 
+             Manufacturer="Invent" 
+             Name="iResearch Version 2.0 (Office 2007)" 
+             Version="2.0.0" Codepage="1252">
+        <Package Id="*" Keywords="iResearch" Description="iResearch Installer" Comments="iResearch is a product of Invent Business Solutions." Manufacturer="Invent" InstallerVersion="200" Languages="1033" Compressed="yes" SummaryCodepage="1252" />
+        <Media Id="1" Cabinet="iResearch.cab" EmbedCab="yes" DiskPrompt="CD-ROM #1" />
+        <!-- Properties -->
+        <Property Id="DiskPrompt" Value="iResearch 2.0.0 Installation [1]" />
+        <Property Id="OFFICE_INSTALL_ROOT">
+            <RegistrySearch Id="regOfficeInstallRoot" Type="raw" Root="HKLM" Key="SOFTWARE\Microsoft\Office\12.0\Common\InstallRoot" Name="Path" />
+        </Property>
+        <Icon Id="iResearch_Icon" SourceFile="..\src\Res\iResearch_V2.ico" />
+        <Property Id="ARPPRODUCTICON" Value="iResearch_Icon" />
+        <Property Id="ARPCONTACT">essam@ieee.org</Property>
+        <Property Id="ARPHELPTELEPHONE">010 606 07 89</Property>
+        <UI />
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder" Name="PFiles">
+                <Directory Id="INSTALLDIR" Name="iResearch">
+                    <Component Id="component_iResearch" DiskId="1" Guid="C65D7C8B-686F-4E83-BBA0-0329CA94AD3E">
+                        <!-- Environment Variable of installation location-->
+                        <Environment Id="env_iResearch_removed" Name="iResearch" Action="remove" System="yes" />
+                        <Environment Id="env_iResearch" Name="iResearch" Action="create" System="yes" Value="[INSTALLDIR]" />
+                        <File Id="_.ver.txt" Name=".ver.txt" Source="..\src\.ver.txt" />
+                    </Component>
+                    <Directory Id="iResearch_Excel_Files" Name="Excel">
+                        <!-- Excel Templates-->
+                        <Component Id="component_iResearch_Excel_Files" Guid="262E1B8D-A834-4F22-995A-9F75F558DCFE">
+                            <File Id="iResearch__iResearch_Empty.xltx" Name="iResearch_Empty.xltx" Source="..\src\Excel\iResearch_Empty.xltx" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="iResearch_Help_Files" Name="Help">
+                        <Component Id="component_iResearch_Help" Guid="30895A17-D1FB-4A3F-A212-1E9B53920D7D">
+                            <File Id="iResearch_User_Guide.pptx" Name="iResearch User Guide.pptx" Source="..\doc\iResearch User Guide.pptx" />
+                            <File Id="iResearch_Release_Notes.docx" Name="iResearch Release Notes.docx" Source="..\doc\iResearch Release Notes.docx" />
+                            <File Id="iResearch_Formatting_Guide.docx" Name="Formatting Guide.docx" Source="..\doc\Formatting Guide.docx" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="iResearch_Word" Name="Word">
+                        <Directory Id="iResearch_Reports" Name="Reports">
+                            <Component Id="component_iResearch_Reports" DiskId="1" Guid="0A7698F7-6D0E-493C-AC1B-1F9EC6601032">
+                                <File Id="_core.dotx" Name="_core.dotx" Source="..\src\Word\Reports\_core.dotx" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="Blocks" Name="Blocks">
+                            <Component Id="component_iResearch_WordBlocks" DiskId="1" Guid="423F3797-9051-4648-B441-1CC3A8738A45">
+                                <File Id="iResearch__Place_Holder___Dual_Chart_.doc" Name="iResearch_(Place Holder _ Dual Chart).doc" Source="..\src\Word\Blocks\iResearch_(Place Holder _ Dual Chart).doc" />
+                                <File Id="iResearch__Place_Holder___Single_Chart_.doc" Name="iResearch_(Place Holder _ Single Chart).doc" Source="..\src\Word\Blocks\iResearch_(Place Holder _ Single Chart).doc" />
+                                <File Id="iResearch_ContactCard.doc_1" Name="iResearch_ContactCard.doc" Source="..\src\Word\Blocks\iResearch_ContactCard.doc" />
+                                <File Id="iResearch_ContactSheet.doc_1" Name="iResearch_ContactSheet.doc" Source="..\src\Word\Blocks\iResearch_ContactSheet.doc" />
+                                <File Id="iResearch_Paragraph.doc_1" Name="iResearch_Paragraph.doc" Source="..\src\Word\Blocks\iResearch_Paragraph.doc" />
+                                <File Id="iResearch_PricesTable.doc_1" Name="iResearch_PricesTable.doc" Source="..\src\Word\Blocks\iResearch_PricesTable.doc" />
+                                <File Id="iResearch__Place_Holder___Table_.doc" Name="iResearch_(Place Holder _ Table).doc" Source="..\src\Word\Blocks\iResearch_(Place Holder _ Table).doc" />
+                                <File Id="iResearch__Dual_Pie_Chart_Sheet_.doc" Name="iResearch_(Dual Pie Chart Sheet).doc" Source="..\src\Word\Blocks\iResearch_(Dual Pie Chart Sheet).doc" />
+                                <File Id="iResearch__Dual_Pie_Chart_.docx" Name="iResearch_(Dual Pie Chart).docx" Source="..\src\Word\Blocks\iResearch_(Dual Pie Chart).docx" />
+                                <File Id="iResearch__Line_Chart_Sheet_.doc" Name="iResearch_(Line Chart Sheet).doc" Source="..\src\Word\Blocks\iResearch_(Line Chart Sheet).doc" />
+                                <File Id="iResearch__Line_Chart_.docx" Name="iResearch_(Line Chart).docx" Source="..\src\Word\Blocks\iResearch_(Line Chart).docx" />
+                                <File Id="iResearch__Pie_Chart_Sheet_.doc" Name="iResearch_(Pie Chart Sheet).doc" Source="..\src\Word\Blocks\iResearch_(Pie Chart Sheet).doc" />
+                                <File Id="iResearch__Pie_Chart_.docx" Name="iResearch_(Pie Chart).docx" Source="..\src\Word\Blocks\iResearch_(Pie Chart).docx" />
+                                <File Id="iResearch__Line_and_Pie_Chart_.docx" Name="iResearch_(Line and Pie Chart).docx" Source="..\src\Word\Blocks\iResearch_(Line and Pie Chart).docx" />
+                                <File Id="Report_Company_Note.docx" Name="Report_Company Note.docx" Source="..\src\Word\Blocks\Report_Company Note.docx" />
+                                <File Id="Report_Flashnote.docx" Name="Report_Flashnote.docx" Source="..\src\Word\Blocks\Report_Flashnote.docx" />
+                                <File Id="Report_Initiation_of_Coverage.docx" Name="Report_Initiation of Coverage.docx" Source="..\src\Word\Blocks\Report_Initiation of Coverage.docx" />
+                                <File Id="Report_Macro_and_Strategy.docx" Name="Report_Macro and Strategy Note.docx" Source="..\src\Word\Blocks\Report_Macro and Strategy Note.docx" />
+                                <File Id="Report_Sector_Note.docx" Name="Report_Sector Note.docx" Source="..\src\Word\Blocks\Report_Sector Note.docx" />
+                                <File Id="iResearch__Dual_Bar_Chart_.docx" Name="iResearch_(Dual Bar Chart).docx" Source="..\src\Word\Blocks\iResearch_(Dual Bar Chart).docx" />
+                                <File Id="iResearch__Bar_Chart_.docx" Name="iResearch_(Bar Chart).docx" Source="..\src\Word\Blocks\iResearch_(Bar Chart).docx" />
+                                <File Id="iResearch_Bullets.doc" Name="iResearch_Bullets.doc" Source="..\src\Word\Blocks\iResearch_Bullets.doc" />
+                                <File Id="iResearch_Subsection.doc" Name="iResearch_Subsection.doc" Source="..\src\Word\Blocks\iResearch_Subsection.doc" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <!-- iResearch Theme files -->
+                <Directory Id="OfficeFolder" Name="Microsoft Office">
+                    <Directory Id="OfficeThemeFolder" Name="Document Themes 12">
+                        <Component Id="component_iResearch_Themes" DiskId="1" Guid="788061D9-6BE5-4FE2-A68A-39B3C7EABBC6">
+                            <File Id="iResearch.thmx" Name="iResearch.thmx" Source="..\src\Theme\iResearch.thmx" />
+                        </Component>
+                        <Directory Id="OfficeThemeColors" Name="Theme Colors">
+                            <Component Id="component_iresearch_themes_colors" DiskId="1" Guid="BD9E7F95-4CDD-4586-A139-7C199D2D0CBA">
+                                <File Id="iResearch_colors.xml" Name="iResearch.xml" Source="..\src\Theme\Theme Colors\iResearch.xml" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="OfficeThemeFonts" Name="Theme Fonts">
+                            <Component Id="component_iresearch_themes_fonts" DiskId="1" Guid="442270FA-D76C-4ED7-A28E-90E129D9E828">
+                                <File Id="iResearch_fonts.xml" Name="iResearch.xml" Source="..\src\Theme\Theme Fonts\iResearch.xml" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+            </Directory>
+            <Directory Id="OFFICE_INSTALL_ROOT" Name="OFFICE12">
+                <!--Word Add-in in StartUp-->
+                <Directory Id="WD_START_UP" Name="StartUp">
+                    <Component Id="component_iResearchWordAddIn" Guid="26F43331-2653-4EF8-8CAD-52AB40F34299">
+                        <File Id="iResearch_ToolBar.dotm" Name="iResearch_ToolBar.dotm" Source="..\src\iResearch_ToolBar.dotm" />
+                    </Component>
+                </Directory>
+                <!--Excel Add-in in XLStart-->
+                <Directory Id="XL_START" Name="XLSTART">
+                    <Component Id="component_iResearchExcelAddIn" Guid="6162FFF8-3962-4412-84C3-940F603F2637">
+                        <File Id="iResearch_Addin.xlam" Name="iResearch_Addin.xlam" Source="..\src\Excel\iResearch_Addin.xlam" />
+                    </Component>
+                </Directory>
+            </Directory>
+            <Directory Id="ProgramMenuFolder">
+                <Directory Id="iResearchProgramsFolder" Name="iResearch 2.0">
+                    <Component Id="component_iresearch_shortcut" Guid="dcb3f417-4f43-492b-87f1-5f3641e2b712">
+                        <Shortcut Id="ApplicationStartMenuShortcut1" Name="iResearch User Guide" Description="iResearch User Guide" Target="[iResearch_Help_Files]iResearch User Guide.pptx" WorkingDirectory="iResearch_Help_Files" />
+                        <Shortcut Id="ApplicationStartMenuShortcut2" Name="iResearch Release Notes" Description="iResearch Release Notes" Target="[iResearch_Help_Files]iResearch Release Notes.docx" WorkingDirectory="iResearch_Help_Files" />
+                        <Shortcut Id="ApplicationStartMenuShortcut3" Name="iResearch Formatting Guide" Description="iResearch Formatting Guide" Target="[iResearch_Help_Files]Formatting Guide.docx" WorkingDirectory="iResearch_Help_Files" />
+                        <RemoveFolder Id="iResearchProgramsFolder" On="uninstall" />
+                        <RegistryValue Root="HKCU" Key="Software\Microsoft\iResearch" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+                    </Component>
+                </Directory>
+            </Directory>
+        </Directory>
+        <Feature Id="Complete" Level="1">
+            <ComponentRef Id="component_iResearch" />
+            <ComponentRef Id="component_iResearch_Excel_Files" />
+            <ComponentRef Id="component_iResearch_Help" />
+            <ComponentRef Id="component_iResearch_Reports" />
+            <ComponentRef Id="component_iResearch_WordBlocks" />
+            <ComponentRef Id="component_iResearch_Themes" />
+            <ComponentRef Id="component_iresearch_themes_colors" />
+            <ComponentRef Id="component_iresearch_themes_fonts" />
+            <ComponentRef Id="component_iResearchWordAddIn" />
+            <ComponentRef Id="component_iResearchExcelAddIn" />
+            <ComponentRef Id="component_iresearch_shortcut" />
+        </Feature>
+    </Product>
+</Wix>
