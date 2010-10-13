@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon>
+    <tabs>
+      <tab id="tabHC" label="HC" keytip="HC">
+        <group id="group1" label="iResearch">
+          <button id="button1" label="New" size="large" onAction="RibbonCreateNewSheet" image ="iRCreateNewReport"/>
+          <separator id="separator1" />
+          <menu id="menu2" label="Table Format" size="large" image="iRFormatTable">
+            <button id="buttonFormatSelectedTable" label="Whole Table" onAction="RibbonFormatSelectedTable"/>
+            <menuSeparator id="separator2" />
+            <button id="buttonFormatSelectedRow__TableTitle" label="Table Title" onAction="Ribbon_FormatSelectedRowAs_TableTitle"/>
+            <button id="buttonFormatSelectedRow__TableHeader" label="Table Header" onAction="Ribbon_FormatSelectedRowAs_TableHeader"/>
+            <button id="buttonFormatSelectedRow__TableRow" label="Table Row" onAction="Ribbon_FormatSelectedRowAs_TableRow"/>
+            <button id="buttonFormatSelectedRow__TableFooter" label="Table Footer" onAction="Ribbon_FormatSelectedRowAs_TableFooter"/>
+          </menu>
+          <dialogBoxLauncher>
+            <button id="group1__btn" screentip="About iResearch" onAction="iR_DialogBoxLauncher" />
+          </dialogBoxLauncher>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

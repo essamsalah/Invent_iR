@@ -1,0 +1,16 @@
+iR_Version	Text	1.0
+
+iR_Company_or_Sector_Name	Text
+iR_Report_Type			Text
+iR_Report_Date			Text
+iR_Country_or_Sector		Text
+
+
+
+
+
+
+
+----------
+Macro Password
+inventrr
