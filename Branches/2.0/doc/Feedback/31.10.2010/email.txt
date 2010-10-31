@@ -1,0 +1,22 @@
+Hi Essam
+ 
+Hope you’re doing well.
+ 
+After using the template for a while, the analysts are experiencing a problem with the size of charts. They think the height of them is too short to fit in all the information they want to fit in.
+ 
+I have attached examples of the new height in a word document, it should allow you to just copy and paste but I also have guides as to the size, how they should be centered in the cells, and how they can’t touch the lines of the table they are in.
+ 
+I’ve also attached a picture of the header of the reports, which should have two spaces after.
+ 
+Could we make these change if possible?
+ 
+Thanks!
+ 
+Rehaam Romero
+Editor
+HC
+Dir: +202 3535 7364
+Fax: +202 3535 7365
+Cell: +2 010 555 4790
+Email: rehaam.romero@hc-si.com
+www.hc-si.com
