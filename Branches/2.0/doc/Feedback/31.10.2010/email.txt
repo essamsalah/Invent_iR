@@ -9,6 +9,8 @@ I have attached examples of the new height in a word document, it should allow y
 I’ve also attached a picture of the header of the reports, which should have two spaces after.
  
 Could we make these change if possible?
+
+* ** Could we also do one smaaaalll thing? Could we remove the text “this is a side note” from the template completely?
  
 Thanks!
  
